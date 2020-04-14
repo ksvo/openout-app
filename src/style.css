@@ -1,0 +1,42 @@
+html {
+  height: 100%;
+}
+body {
+  background-color: #81a69b;
+  background-image: url("../images/hiclipart.com.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100;
+}
+
+#container {
+  background-color: transparent;
+  margin: auto;
+  vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-circles {
+  background-color: rgba(56, 105, 90, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 150px;
+  width: 150px;
+}
+
+.image-circles i {
+  font-size: 50px;
+  color: white;
+}
