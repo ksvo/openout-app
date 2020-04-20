@@ -1,13 +1,22 @@
 import React from "react";
 import { render } from "react-dom";
-import Image from "./Image";
+import SearchLocation from "./SearchLocation";
+import SearchResults from "./SearchResults";
+import ActivityDetails from "./ActivityDetails";
+import { Router } from "@reach/router";
+import HomePage from "./HomePage";
 
 const App = () => {
   return (
-    <div id="container">
-      <Image className="fas fa-hiking" />
-      <Image className="fas fa-skiing" />
-      <Image className="fas fa-campground" />
+    <div>
+      <div id="container">
+        <Router>
+          <HomePage path="/" />
+          <SearchLocation path="/location" />
+          <SearchResults path="/search-results" />
+          <ActivityDetails path="/activity-details/:id" />
+        </Router>
+      </div>
     </div>
   );
 };

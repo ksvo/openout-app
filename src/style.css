@@ -17,11 +17,17 @@ body {
 }
 
 #container {
-  background-color: transparent;
-  margin: auto;
-  vertical-align: middle;
   display: flex;
-  justify-content: space-between;
+  background-color: transparent;
+  margin-top: 5.5%;
+  height: 100%;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+
+#homePage {
+  display: flex;
 }
 
 .image-circles {
