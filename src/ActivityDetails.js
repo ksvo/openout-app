@@ -1,8 +1,32 @@
 import React from "react";
 
-const Details = () => {
-  return <h1>hi lol</h1>;
-};
+class Details extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      loading: true,
+    };
+  }
+  componentDidMount() {
+    //add one city
+  }
+  render() {
+    if (this.state.loading) {
+      return <h1>loading ...</h1>;
+    }
+
+    const { city, description } = this.state;
+
+    return (
+      <div>
+        <h1>{city}</h1>
+        <button>Choose {city}</button>
+        <p>{description}</p>
+      </div>
+    );
+  }
+}
 
 export default Details;
 

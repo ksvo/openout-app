@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import SearchLocation from "./SearchLocation";
+import SearchPage from "./SearchPage";
 import SearchResults from "./SearchResults";
 import ActivityDetails from "./ActivityDetails";
 import { Router } from "@reach/router";
@@ -12,8 +12,8 @@ const App = () => {
       <div id="container">
         <Router>
           <HomePage path="/" />
-          <SearchLocation path="/location" />
-          <SearchResults path="/search-results" />
+          <SearchPage path="/search/:activity-type" />
+          <SearchResults path="/search-results/:activity-type/:search-query" />
           <ActivityDetails path="/activity-details/:id" />
         </Router>
       </div>
