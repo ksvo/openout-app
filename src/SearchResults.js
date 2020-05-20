@@ -13,7 +13,7 @@ export default function SearchResults(props) {
   if (result) {
     return <div>{/* map through results */}</div>;
   }
-  return <div>No results found for your location</div>;
+  return <h1 className="title">No results found for your location</h1>;
 }
 
 //page where the results for the chosen activity and chosen location are displayed; third page (second after home);

@@ -11,7 +11,7 @@ const SearchForm = (props) => {
 
   return (
     <div className="search-params">
-      <form onSubmit={searchFunc}>
+      <form className="form" onSubmit={searchFunc}>
         <label htmlFor="location">
           <input
             id="location"
