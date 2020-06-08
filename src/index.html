@@ -12,9 +12,30 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
     <div id="root">not rendering</div>
     <script src="./App.js"></script>
+
+    <div id="map"></div>
+
+    <script>
+      function initMap() {
+        var options = {
+          zoom: 8,
+          center: { lat: 42.3061, lng: -71.0589 },
+        };
+
+        var map = new google.maps.Map(document.getElementById("map"), options);
+      }
+    </script>
+
+    <script src="./google-apis/init.js"></script>
   </body>
 </html>
